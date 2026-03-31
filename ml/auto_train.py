@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import snowflake.connector
 import pandas as pd
 import subprocess
@@ -36,3 +37,6 @@ if len(df) > 0:
     subprocess.run(["venv/Scripts/python", "ml/train_model.py"])
 
     print("Training complete")
+=======
+
+>>>>>>> 96c9fe3c0f333a8ba3863b7cb6feed4c1b6e7112

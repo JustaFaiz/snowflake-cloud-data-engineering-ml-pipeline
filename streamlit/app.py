@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ---------------------------------
 # Revenue Prediction Dashboard
 # ---------------------------------
@@ -167,3 +168,6 @@ if st.button("Predict"):
     insert_prediction(order_input, prediction[0])
 
     st.success(f"Predicted Revenue: {prediction[0]:,.2f}")
+=======
+
+>>>>>>> 96c9fe3c0f333a8ba3863b7cb6feed4c1b6e7112

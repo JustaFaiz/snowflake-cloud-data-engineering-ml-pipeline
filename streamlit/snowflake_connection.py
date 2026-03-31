@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import snowflake.connector
 import pandas as pd
 
@@ -52,3 +53,6 @@ def insert_prediction(order_count, predicted_value):
 
     cursor.close()
     conn.close()
+=======
+
+>>>>>>> 96c9fe3c0f333a8ba3863b7cb6feed4c1b6e7112

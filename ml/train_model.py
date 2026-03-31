@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pandas as pd
 import snowflake.connector
 from sklearn.model_selection import train_test_split
@@ -174,3 +175,6 @@ conn.commit()
 conn.close()
 
 print("Model results stored in Snowflake.")
+=======
+
+>>>>>>> 96c9fe3c0f333a8ba3863b7cb6feed4c1b6e7112
