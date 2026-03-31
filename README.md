@@ -43,6 +43,10 @@ User Prediction Input
 ↓
 Predictions stored in Snowflake
 
+![Architecture](images/Architecture_Diagram.png)
+
+![Medallion Architecture](images/Snowflake_Medallion_Architecture.png)
+
 ---
 
 ## ⚙️ Tech Stack
@@ -91,6 +95,14 @@ XGBoost | 0.692 | 3804 | 9103 |
 
 ---
 
+## 🤖 Model Comparison
+
+![Model Comparison](images/Models_Comparison_Chart.png)
+
+![Error Metrics](images/Error_Metrics_Chart.png)
+
+ ---
+ 
 ## 📊 Dashboard Features
 
 - 📌 KPI Metrics (Revenue, Orders)
@@ -98,6 +110,12 @@ XGBoost | 0.692 | 3804 | 9103 |
 - 📊 Orders vs Revenue Analysis
 - 📉 Feature Importance Visualization
 - 🤖 Real-time Revenue Prediction Tool
+
+---
+
+## 📌 Feature Importance
+
+![Feature Importance](images/Feature_Importance.png)
 
 ---
 
@@ -122,6 +140,8 @@ User Inputs → Predictions
         ↓
 Stored back in Snowflake
 ```
+
+![Pipeline](images/ML_Pipeline_Flow.png)
 
 ---
 
@@ -151,6 +171,17 @@ snowflake-medallion-ml-pipeline/
 ├── requirements.txt
 ├── README.md
 ```
+
+---
+
+## 📊 Streamlit Dashboard
+
+![Dashboard](images/Streamlit_Dashboard.png)
+![Dashboard](images/Streamlit_Dashboard_2.png)
+![Dashboard](images/Streamlit_Dashboard_3.png)
+![Dashboard](images/Streamlit_Dashboard_4.png)
+![Dashboard](images/Streamlit_Dashboard_5.png)
+![Dashboard](images/Streamlit_Dashboard_6.png)
 
 ---
 
@@ -185,24 +216,31 @@ data/daily_revenue.csv
 
 Modify your function in snowflake_connection.py:
 
+```
+
 def fetch_daily_revenue():
     return pd.read_csv("data/daily_revenue.csv")
 
+```
 ### You can also disable Snowflake inserts temporarily:
+
+```
 
 def insert_prediction(order_count, predicted_value):
     pass
+```
+
 ## 📌 Future Enhancements
 
-**Model versioning**
+- Model versioning
 
-**Docker deployment**
+- Docker deployment
 
-**Cloud deployment (AWS / Azure)**
+- Cloud deployment (AWS / Azure)
 
-**Advanced feature engineering**
+- Advanced feature engineering
 
-**Real-time streaming pipeline**
+- Real-time streaming pipeline
 
 ## 📄 Research Paper
 
