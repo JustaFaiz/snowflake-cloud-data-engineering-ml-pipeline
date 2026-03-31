@@ -103,50 +103,54 @@ XGBoost | 0.692 | 3804 | 9103 |
 
 ## 🔄 ML Pipeline Workflow
 
+```
 Snowflake (Gold Layer Data)
-↓
+        ↓
 Python (Data Extraction)
-↓
+        ↓
 Feature Engineering
-↓
+        ↓
 Model Training
-↓
+        ↓
 Model Comparison
-↓
+        ↓
 Best Model Saved
-↓
+        ↓
 Streamlit Dashboard Uses Model
-↓
+        ↓
 User Inputs → Predictions
-↓
+        ↓
 Stored back in Snowflake
+```
 
 ---
 
 ## 📁 Project Structure
 
+```
 snowflake-medallion-ml-pipeline/
 │
 ├── data/
-│ └── daily_revenue.csv
+│   └── daily_revenue.csv
 │
 ├── ml/
-│ ├── train_model.py
-│ ├── auto_train.py
-│ ├── revenue_model.pkl
+│   ├── train_model.py
+│   ├── auto_train.py
+│   ├── revenue_model.pkl
 │
 ├── streamlit/
-│ ├── app.py
-│ ├── snowflake_connection.py
+│   ├── app.py
+│   ├── snowflake_connection.py
 │
 ├── sql/
-│ ├── data_engineering_pipeline.sql
-│ ├── automation_tasks.sql
-│ ├── predictions.sql
-│ ├── ml_retrainer.sql
+│   ├── data_engineering_pipeline.sql
+│   ├── automation_tasks.sql
+│   ├── predictions.sql
+│   ├── ml_retrainer.sql
 │
 ├── requirements.txt
 ├── README.md
+```
 
 ---
 
